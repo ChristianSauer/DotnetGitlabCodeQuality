@@ -18,11 +18,13 @@ This tool aims to rectify this problem by offering three functions:
 I assume that you have your Project at `c:\dev\myproject` and you have built it, so that a codequality file exists at `c:\dev\myproject\codeanalysis.sarif.json`
 
 Now we want to generate a Gitlab compatible file:
+
 ```shell
 dotnet tool run cq sarif codeanalysis.sarif.json targetfile.json c:/dev
 ```
 
 For Roslynator:
+
 ```shell
 dotnet tool run cq roslynator roslynator.xml targetfile.json c:/dev
 ```
