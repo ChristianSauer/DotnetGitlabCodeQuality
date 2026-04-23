@@ -1,14 +1,14 @@
 name: dotnet package
 
-on: [push]
+on: [ push ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v6
       - name: Setup .NET Core SDK
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v5
         with:
           dotnet-version: |
             8
@@ -22,4 +22,6 @@ jobs:
         run: dotnet test --no-restore --verbosity normal
       - name: Nuget
         if: startsWith(github.ref, 'refs/heads/main')
-        run: dotnet nuget push ./CodeQualityToGitlab/nupkg/CodeQualityToGitlab.*.nupkg --source 'https://api.nuget.org/v3/index.json' --api-key ${{secrets.NUGET_API_KEY}}
+        run: dotnet nuget push ./CodeQualityToGitlab/nupkg/CodeQualityToGitlab.*.nupkg
+          --source 'https://api.nuget.org/v3/index.json' --api-key
+          ${{secrets.NUGET_API_KEY}}
