@@ -1,4 +1,8 @@
-# dotnet_gitlab_code_quality
+# Dotnet Gitlab Code Quality
+
+Convert Sarif files into Gitlab compatible files
+
+Inheritor to https://github.com/codecentric/dotnet_gitlab_code_quality
 
 ## What does it do?
 
@@ -11,7 +15,7 @@ This tool aims to rectify this problem by offering three functions:
 
 ### Example:
 
-I assume that you have your Project at c:\dev\myproject and you have build it, so that a codequality file exists at `c:\dev\myproject\codeanalysis.sarif.json`
+I assume that you have your Project at `c:\dev\myproject` and you have built it, so that a codequality file exists at `c:\dev\myproject\codeanalysis.sarif.json`
 
 Now we want to generate a Gitlab compatible file:
 ```shell
@@ -94,9 +98,13 @@ While dotnet only outputs Sarif 1, other projects use Sarif 2. For convenience, 
 
 ## Changelog
 
+### 2.2.0
+
+Forked and renamed to `Dotnet Gitlab Code Quality`
+
 ### 2.1.0
 
-- Fixes Sarif 2.0 error message - thanks  mcserep
+- Fixes Sarif 2.0 error message – thanks mcserep
 - Supports Dotnet 10
 
 ## Contributors

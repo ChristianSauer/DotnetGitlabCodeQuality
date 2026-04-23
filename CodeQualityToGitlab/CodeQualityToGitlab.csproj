@@ -1,18 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFrameworks>net8.0;net9.0</TargetFrameworks>
+    <TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>cq</ToolCommandName>
     <PackageOutputPath>./nupkg</PackageOutputPath>
-    <Version>2.1.0</Version>
-    <Company>codecentric</Company>
-    <Copyright>(c) codecentric</Copyright>
-    <PackageProjectUrl>https://github.com/codecentric/dotnet_gitlab_code_quality</PackageProjectUrl>
+    <Version>2.2.0</Version>
+    <Copyright>codecentric, Christian Sauer</Copyright>
+    <PackageProjectUrl>https://github.com/ChristianSauer/DotnetGitlabCodeQuality</PackageProjectUrl>
     <Description>Convert Dotnet warnings into Gitlab code quality format</Description>
-    <RepositoryUrl>https://github.com/codecentric/dotnet_gitlab_code_quality.git</RepositoryUrl>
+    <RepositoryUrl>https://github.com/ChristianSauer/DotnetGitlabCodeQuality.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>Gitlab; code quality; roslynator</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
